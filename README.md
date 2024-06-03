@@ -1,6 +1,6 @@
 # Vibranium Exchange using ERC20
 
-This fullstack project aims for the demo of token miniting, transfer and burning.
+This fullstack project aims for the demo of token miniting, transfer and burning in ERC20.
 
 ## Description
 The smart contract can be deployed on any test net or hardhat, This contract is an ERC20 contract. ```customer[] public customers``` is an array to store the buyers in a queue. A buyer can addup into queue by calling ```requestTokens()```. Multiple buyers will be added in queue. Then then contract owner will call ```mintToken()```that can only be called by owner which will mint tokens for all the buyers in the queue and make it empty. ```burnToken()``` will burn the token and ```transferToken()``` will transfer the token to other address.
@@ -9,7 +9,7 @@ The smart contract can be deployed on any test net or hardhat, This contract is 
 ## Getting Started
 ### Executing the program
 To run the code, follow these steps:
-1) git clone ```repo```
+1) ```git clone https://github.com/Ms-10182/eth-avax-proof-intermediate-project-3.git```
 2) copy the ```Vibranium.sol```into remix and deploy on test net.
 if deploying on remix evm the front end of remix will be used to interact.
 3) After deploying on test net copy the address of contract and paste in ```contractAddress``` inside ```app.js```, and copy abi and paste in ```contractABI``` inside same ```app.js```.
